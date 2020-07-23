@@ -294,7 +294,7 @@ img {
 }
 
   }
-  @media (max-height: 700px) {
+  @media (max-height: 600px) {
     #home{
       max-width: 100vw;
       max-height: 135vh;
@@ -327,7 +327,7 @@ img {
   }
   #gameplay {
     height: 100vh;
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
     text-align: center;
     margin-top: 300px;
   }
