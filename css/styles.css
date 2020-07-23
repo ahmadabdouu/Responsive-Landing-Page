@@ -327,9 +327,9 @@ img {
   }
   #gameplay {
     height: 100vh;
-    margin-bottom: 1000px;
+    margin-bottom: 1200px;
     text-align: center;
-    margin-top: 1000px;
+    margin-top: 300px;
   }
   .showcase {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
