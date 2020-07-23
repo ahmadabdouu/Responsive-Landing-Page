@@ -197,6 +197,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+
+}
+#contact-form {
+  margin-top: 500px;
 }
 
 .contact form label {
@@ -290,7 +294,7 @@ img {
 }
 
   }
-  @media (max-width: 400px) {
+  @media (max-height: 700px) {
     #home{
       max-width: 100vw;
       max-height: 135vh;
@@ -325,6 +329,7 @@ img {
     height: 100vh;
     margin-bottom: 1000px;
     text-align: center;
+    margin-top: 1000px;
   }
   .showcase {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
