@@ -1,0 +1,176 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Black Jack Online Game</title>
+  </head>
+  <body>
+    <header class="showcase" id="home">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home"
+            ><img src="image/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#playground">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gameplay">Game Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactform">Join Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="showcase-content">
+        <h1>Blackjack</h1>
+        <p>'the most popular card game on earth'</p>
+      </div>
+    </header>
+    <section id="playground">
+      <div class="game-container">
+        <h3><span id="result-message">Play Now</span></h3>
+        <div class="flex-blackjack-row1">
+          <div id="user-box">
+            <h2>You: <span id="user-round-result">0</span></h2>
+          </div>
+          <div id="dealer-box">
+            <h2>Dealer: <span id="dealer-round-result">0</span></h2>
+          </div>
+        </div>
+        <div class="flex-blackjack-row2">
+          <div>
+            <button id="hit-button" class="btn-small btn-rounded">
+              Hit
+            </button>
+            <button id="stand-button" class="btn-small btn-rounded">
+              Stand
+            </button>
+            <button id="deal-button" class="btn-small btn-rounded">
+              Deal
+            </button>
+          </div>
+        </div>
+        <div class="flex-blackjack-row3">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Wins</th>
+                <th scope="col">Losses</th>
+                <th scope="col">Draws</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span id="wins">0</span></th>
+                <td><span id="losses">0</span></td>
+                <td><span id="draws">0</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="gameplay">
+        <h3 class="sub-headding">How to play</h3>
+        <p>
+          Blackjack is a card game that pits player versus dealer. It is played
+          with one or more decks of cards. Cards are counted as their respective
+          numbers, face cards as ten, and ace as either eleven or one (in our
+          game it will show on the counter as an 11 unless you are over 21). The
+          object of Blackjack is the beat the dealer. This can be accomplished
+          by getting Blackjack (first two cards equal 21) without dealer
+          Blackjack, having your final card count be higher than the dealers
+          without exceeding 21, or by not exceeding 21 and dealer busting by
+          exceeding their card count of 21. In Blackjack, or 21, the player must
+          decide what to bet before the hand. Click the chips to add them to
+          your bet. Click the chip again to remove it back to your pile of
+          money. Once you click "deal" your bet is set, and two cards are dealt
+          to the player face up and two cards are dealt to the dealer, one face
+          up and one face down. You must then decide if you will "hit" (take
+          another card from the deck), "stand" (keep the hand you are dealt), or
+          "double" (you double your bet and are given only one more card). Once
+          the Blackjack hand is played out, three outcomes can occur. First you
+          can win (as previously described), secondly you can lose (bust hand or
+          have less than dealer hand), or you can push (have same hand - number
+          count or Blackjack - as dealer). If you win, you get your bet money
+          back PLUS that same amount from the dealer, YAY! If you win with
+          Blackjack, you get your original bet back PLUS you win 1.5 times your
+          bet from the dealer, WOOHOO! If you lose, the dealer takes your bet
+          money. If you push, you keep your bet money but do not win anything
+          additional.
+        </p>
+      </div>
+    </section>
+    <section id="contactform">
+      <div class="contact">
+        <h3>Join Our Community</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required />
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company" />
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required />
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="number" name="phone" id="phone" />
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
