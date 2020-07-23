@@ -244,7 +244,7 @@ img {
   margin: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #home{
     max-width: 100vw;
     max-height: 135vh;
@@ -280,6 +280,60 @@ img {
   margin-bottom: 1000px;
   text-align: center;
 }
+.showcase {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://www.kinobit.net/wp-content/uploads/6.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 
   }
+  @media (max-width: 400px) {
+    #home{
+      max-width: 100vw;
+      max-height: 135vh;
+      
+  }
+  .showcase-content h1 {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 1;
+    margin: 0 0 2rem;
+  }
+  .showcase-content p {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 0.9;
+    margin: 0 0 1rem;
+  }
+  .navbar-brand img {
+    height: 50px;
+    width: 100px;
+  }
+  .contact form {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #gameplay {
+    height: 100vh;
+    margin-bottom: 1000px;
+    text-align: center;
+  }
+  .showcase {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(https://www.kinobit.net/wp-content/uploads/6.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+    }
 
